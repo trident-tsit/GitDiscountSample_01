@@ -40,7 +40,8 @@ public class Main {
 
             //すべての割引が適用された後の購入金額を求める
             int total = (int)(input_price * (1 - d_rate)) - d_amount;
-            System.out.println("割引後の金額は" + total + "円です!");
+            System.out.println("割引後の金額は" + total
+                    + "円です!");
 
         }else{
             System.out.println("割引対象外です!!");
