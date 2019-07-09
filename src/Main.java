@@ -27,16 +27,27 @@ public class Main {
         DiscountSample ds = new DiscountSample();
         boolean rtn = ds.priceCheck(input_price);
 
-        if(rtn == true) {
+        //if(rtn == true) {
             if (rtn) {
                 System.out.println("割引対象です!!");
 
+                //性別によるさらなる割引確認
+                double d_rate = ds.sexCheck("f");
+                System.out.println("性別による割引額は" + (int)(input_price * d_rate) + "円");
+
+                //年齢によるさらなる割引確認
+                int d_amount = ds.ageCheck(19);
+                System.out.println("年齢による割引額は" + d_amount + "円");
+
+                //すべての割引が適用された後の購入金額を求める
+                int total = (int)(input_price * (1 - d_rate)) - d_amount;
+                System.out.println("割引後の金額は" + total + "円です!");
 
             } else {
                 System.out.println("割引対象外です!!");
             }
 
         }
-    }
+
 
 }
