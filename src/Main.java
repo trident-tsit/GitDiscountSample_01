@@ -28,15 +28,15 @@ public class Main {
         boolean rtn = ds.priceCheck(input_price);
 
         if(rtn == true) {
-        if(rtn) {
-            System.out.println("割引対象です!!");
+            if (rtn) {
+                System.out.println("割引対象です!!");
 
 
-        }else{
-            System.out.println("割引対象外です!!");
+            } else {
+                System.out.println("割引対象外です!!");
+            }
+
         }
-
-
     }
 
 }
