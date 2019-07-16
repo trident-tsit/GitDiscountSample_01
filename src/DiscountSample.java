@@ -13,7 +13,7 @@ public class DiscountSample {
     public double sexCheck(String sex) {
         if (sex.equals("f")) {   // 女性なら2割引
             return 0.2;
-        } else {            // 男性なら1割引
+        } else {                 // 男性なら1割引
             return 0.1;
         }
     }
